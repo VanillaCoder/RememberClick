@@ -78,17 +78,18 @@ const original = () => {
     return (tiles)
 }
 
-const score = (currentState, currentTile) => {
-    let copy = currentState;
+const score = (copy, currentTile) => {
+
     let copyTiles = {
         arr: [],
-        score: copy.score
+        score: copy.score,
+        flag: copy.flag
     }
-    console.log(copy)
-    if (copy.score < 0 || copy.score > 9) {
+    if (copy.flag) {
         copyTiles.score = 0;
-        copy.score = 0;
-        copy.tiles = original();
+        console.log(copy)
+        copyTiles = original();
+        console.log(copy)
         copy.tiles.map(result => {
             if (result.name !== currentTile.name) {
                 copyTiles.arr.push({ img: result.img, clicked: result.clicked, name: result.name })
@@ -103,15 +104,23 @@ const score = (currentState, currentTile) => {
                 console.log("YOU LOSE LOSER")
             }
         })
+        return copyTiles
     }
     else {
+        console.log(copy)
         copy.tiles.map(result => {
             if (result.name !== currentTile.name) {
                 copyTiles.arr.push({ img: result.img, clicked: result.clicked, name: result.name })
             }
             else if (result.name === currentTile.name && currentTile.clicked === false) {
                 copyTiles.arr.push({ img: result.img, clicked: true, name: result.name })
-                copyTiles.score = copyTiles.score + 1
+                if (copyTiles.score + 1 === 11) {
+                    copyTiles.score = + 1;
+                    copyTiles.flag = true;
+                }
+                else {
+                    copyTiles.score = copyTiles.score + 1
+                }
             }
             else {
                 copyTiles.arr.push({ img: result.img, clicked: result.clicked, name: result.name })
@@ -119,8 +128,8 @@ const score = (currentState, currentTile) => {
                 console.log("YOU LOSE LOSER")
             }
         })
+        return copyTiles
     }
-    return copyTiles;
 }
 
 export default class Boxes extends React.Component {
@@ -179,8 +188,40 @@ export default class Boxes extends React.Component {
                 name: "Trunks"
             }
         ],
-        score: 0
+        score: 0,
+        flag: false
     }
+
+
+changeScore(){
+    if (this.state.score === 9){
+        alert("You win!")
+        window.location.reload()
+    }
+    else {
+        this.setState({score : (this.state.score + 1)})
+    }
+}
+
+
+    score2(name) {
+
+        this.setState({
+            tiles: this.state.tiles.map(tile => {
+                if (tile.name === name){
+                    if (tile.clicked === true){
+                        alert('You lose!')
+                        window.location.reload();
+                    }
+                    tile.clicked = true
+                    this.changeScore();
+                }
+                return tile;
+            })
+        })
+    }
+
+
     render() {
 
 
@@ -189,6 +230,7 @@ export default class Boxes extends React.Component {
                 <div className="container">
                     <div className="row">
                         <Score score={this.state.score}></Score>
+
                     </div>
                     <div className="row">
                         {this.state.tiles.map(aTile => {
@@ -196,10 +238,10 @@ export default class Boxes extends React.Component {
                                 <Tiles
                                     changeEvent={(event) => this.state}
                                     shuffleEvent={(event) => {
-                                        let temp = (score(this.state, aTile))
-                                        this.setState({ tiles: temp.arr, score: temp.score })
-                                        // this.setState({ tiles: shuffle(this.state.tiles) })
-                                        console.log(this.state)
+                                        this.score2(aTile.name)
+                                        // let temp = (score(this.state, aTile))
+                                        // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
+                                        this.setState({ tiles: shuffle(this.state.tiles) })
                                     }}
                                     image={aTile.img}
                                     data={aTile.clicked}
