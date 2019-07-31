@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/repository-name/static/js/main.12b62f51.chunk.js",
-    "main.js.map": "/repository-name/static/js/main.12b62f51.chunk.js.map",
-    "runtime~main.js": "/repository-name/static/js/runtime~main.f7634681.js",
-    "runtime~main.js.map": "/repository-name/static/js/runtime~main.f7634681.js.map",
-    "static/js/2.65aa1cca.chunk.js": "/repository-name/static/js/2.65aa1cca.chunk.js",
-    "static/js/2.65aa1cca.chunk.js.map": "/repository-name/static/js/2.65aa1cca.chunk.js.map",
-    "index.html": "/repository-name/index.html",
-    "precache-manifest.cc581f15ef01998aea5b147b9c782977.js": "/repository-name/precache-manifest.cc581f15ef01998aea5b147b9c782977.js",
-    "service-worker.js": "/repository-name/service-worker.js"
+    "main.js": "/RememberClick/static/js/main.12b62f51.chunk.js",
+    "main.js.map": "/RememberClick/static/js/main.12b62f51.chunk.js.map",
+    "runtime~main.js": "/RememberClick/static/js/runtime~main.80490c3a.js",
+    "runtime~main.js.map": "/RememberClick/static/js/runtime~main.80490c3a.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/RememberClick/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/RememberClick/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/RememberClick/index.html",
+    "precache-manifest.2d08825778302897548173bf2e059796.js": "/RememberClick/precache-manifest.2d08825778302897548173bf2e059796.js",
+    "service-worker.js": "/RememberClick/service-worker.js"
   }
 }
