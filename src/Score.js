@@ -22,7 +22,7 @@ export default function Score(props) {
     else {
         return (
             <div>
-                <h1>{props.score}</h1>
+                <h1>Score: {props.score}</h1>
             </div>
         )
     }

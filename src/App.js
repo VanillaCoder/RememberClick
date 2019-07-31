@@ -1,12 +1,20 @@
 import React from 'react';
 import Boxes from "./Boxes";
 
+
+const styless = {
+  fontStyle : {
+    textAlign: "center"
+  }
+}
 function App() {
 
   
   return (
     <div>
-      <h1>welcome</h1>
+      <h1 style={styless.fontStyle}>DBZ Memory Game</h1>
+      <h2 style={styless.fontStyle}>Click each character once to win!</h2>
+
       <Boxes />
     </div>
   );
