@@ -3,8 +3,8 @@ import React from 'react'
 
 const styles = {
     cardStyle: {
-        width: "14rem",
-        height: "14rem"
+        width: "12.5rem",
+        height: "12.5rem"
     }
 }
 export function Tiles(props) {

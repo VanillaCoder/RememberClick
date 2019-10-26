@@ -314,7 +314,7 @@ export default class Boxes extends React.Component {
                         <Score score={this.state.score}></Score>
 
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         {this.state.tiles.map(aTile => {
                             return (
                                 <Tiles
@@ -330,36 +330,44 @@ export default class Boxes extends React.Component {
                                 ></Tiles>
                             )
                         })}
-                    </div>
-                </div>
-                //testing here
-                <header>
-                    <div class="container">
-                        <h1>Direction-aware hover effect</h1>
-                        <p>CSS &amp; bits of JS</p>
-                    </div>
-                </header>
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a class="normal" href="#">
-                                <svg viewBox="0 0 80 76" x="0px" y="0px">
-                                    <g>
-                                        <path d="M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                            <div class="info">
-                                <Tiles>
-                                    image="https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg"
-                                </Tiles>
-                                <h3>Single-origin coffee whatever</h3>
-                                <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                    </div> */}
+                    //testing here
+                    <div className="row">
+                        <ul>
+                            {this.state.tiles.map(aTile => {
+                                return (
+                                    <li>
+                                        <a class="normal">
+                                            <svg viewBox="0 0 80 76" x="0px" y="0px">
+                                            </svg>
+                                        </a>
+                                        <div class="info">
+                                            <Tiles
+                                                changeEvent={(event) => this.state}
+                                                shuffleEvent={(event) => {
+                                                    this.score2(aTile.name)
+                                                    // let temp = (score(this.state, aTile))
+                                                    // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
+                                                    this.setState({ tiles: shuffle(this.state.tiles) })
+                                                }}
+                                                image={aTile.img}
+                                                data={aTile.clicked}
+                                            ></Tiles>
+                                            <h3>Single-origin coffee whatever</h3>
+                                            <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
+                                        </div>
+                                    </li>
 
+                                )
+                            })}
+                        </ul>
+                    </div>
+
+
+
+
+
+                </div>
 
             </div >
         )
