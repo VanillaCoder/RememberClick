@@ -1,5 +1,6 @@
 import React from 'react';
 import Boxes from "./Boxes";
+import "./App.scss";
 
 
 const styless = {
