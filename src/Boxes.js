@@ -308,13 +308,13 @@ export default class Boxes extends React.Component {
 
 
         return (
-            <div>
                 <div className="container">
                     <div className="row">
+                        <div className="col-sm">
                         <Score score={this.state.score}></Score>
-
+                        </div>
                     </div>
-                    {/* <div className="row">
+                    <div className="row">
                         {this.state.tiles.map(aTile => {
                             return (
                                 <Tiles
@@ -330,46 +330,9 @@ export default class Boxes extends React.Component {
                                 ></Tiles>
                             )
                         })}
-                    </div> */}
-                    //testing here
-                    <div className="row">
-                        <ul>
-                            {this.state.tiles.map(aTile => {
-                                return (
-                                    <li>
-                                        <a class="normal">
-                                            <svg viewBox="0 0 80 76" x="0px" y="0px">
-                                            </svg>
-                                        </a>
-                                        <div class="info">
-                                            <Tiles
-                                                changeEvent={(event) => this.state}
-                                                shuffleEvent={(event) => {
-                                                    this.score2(aTile.name)
-                                                    // let temp = (score(this.state, aTile))
-                                                    // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
-                                                    this.setState({ tiles: shuffle(this.state.tiles) })
-                                                }}
-                                                image={aTile.img}
-                                                data={aTile.clicked}
-                                            ></Tiles>
-                                            <h3>Single-origin coffee whatever</h3>
-                                            <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
-                                        </div>
-                                    </li>
-
-                                )
-                            })}
-                        </ul>
                     </div>
-
-
-
-
-
                 </div>
 
-            </div >
         )
     }
 }
