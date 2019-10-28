@@ -311,7 +311,7 @@ export default class Boxes extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h1>{this.state.score}</h1>
+                        <h1>Score: {this.state.score}</h1>
                         {/* <Score score={this.state.score}></Score> */}
                     </div>
                 </div>
