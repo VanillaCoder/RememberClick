@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tiles } from "./Tile"
-import Score from "./Score"
+// import Score from "./Score"
 
 // does what it says
 const shuffle = (array) => {
@@ -276,7 +276,7 @@ export default class Boxes extends React.Component {
 
 
     changeScore() {
-        if (this.state.score === 9) {
+        if (this.state.score === 14) {
             alert("You win!")
             window.location.reload()
         }
@@ -311,11 +311,13 @@ export default class Boxes extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Score score={this.state.score}></Score>
+                        <h1>{this.state.score}</h1>
+                        {/* <Score score={this.state.score}></Score> */}
                     </div>
                 </div>
                 <div className="row">
-                    <div className="wrapper">
+                    {/* <div className="col"> */}
+
                         <ul>
 
                             {this.state.tiles.map(aTile => {
@@ -334,10 +336,9 @@ export default class Boxes extends React.Component {
                                 )
                             })}
                         </ul>
-
                     </div>
                 </div>
-            </div>
+            // </div>
 
         )
     }

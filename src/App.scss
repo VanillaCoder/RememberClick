@@ -18,7 +18,6 @@ li {
   
   width: 100%;
   height: 100%;
-  // padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -91,24 +90,19 @@ li {
 /* you can ignore this ones */
 ul {
   padding: 0;
-  margin: 0 0 50px;
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
-  position: relative;
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-  padding: 0;
-  list-style: none;
-  
+  align-self: center;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 0.25rem;
+  padding: 0;  
   a  {
     display: inline-block;
     vertical-align: top;
@@ -148,10 +142,6 @@ li {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #fff;
 }
@@ -163,11 +153,6 @@ h1 {
 
 h3 {
   font-family: 'Bree Serif', serif;
-}
-
-.container {
-  width: 840px;
-  margin: 0 auto;
 }
 
 header {
