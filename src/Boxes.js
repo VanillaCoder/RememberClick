@@ -308,30 +308,36 @@ export default class Boxes extends React.Component {
 
 
         return (
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
                         <Score score={this.state.score}></Score>
-                        </div>
-                    </div>
-                    <div className="row">
-                        {this.state.tiles.map(aTile => {
-                            return (
-                                <Tiles
-                                    changeEvent={(event) => this.state}
-                                    shuffleEvent={(event) => {
-                                        this.score2(aTile.name)
-                                        // let temp = (score(this.state, aTile))
-                                        // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
-                                        this.setState({ tiles: shuffle(this.state.tiles) })
-                                    }}
-                                    image={aTile.img}
-                                    data={aTile.clicked}
-                                ></Tiles>
-                            )
-                        })}
                     </div>
                 </div>
+                <div className="row">
+                    <div className="wrapper">
+                        <ul>
+
+                            {this.state.tiles.map(aTile => {
+                                return (
+                                    <Tiles
+                                        changeEvent={(event) => this.state}
+                                        shuffleEvent={(event) => {
+                                            this.score2(aTile.name)
+                                            // let temp = (score(this.state, aTile))
+                                            // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
+                                            this.setState({ tiles: shuffle(this.state.tiles) })
+                                        }}
+                                        image={aTile.img}
+                                        data={aTile.clicked}
+                                    ></Tiles>
+                                )
+                            })}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
 
         )
     }

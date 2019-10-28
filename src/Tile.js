@@ -11,7 +11,7 @@ const styles = {
 //testing
 export function Tiles(props) {
     return (
-        <li
+        <li className="list-inline"
             onChange={props.changeEvent}
             onClick={props.shuffleEvent}
             data-clicked={props.data}
