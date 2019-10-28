@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RememberClick/static/css/main.53b3bc1e.chunk.css",
+    "main.css": "/RememberClick/static/css/main.5d38db8f.chunk.css",
     "main.js": "/RememberClick/static/js/main.b3bd90ba.chunk.js",
     "main.js.map": "/RememberClick/static/js/main.b3bd90ba.chunk.js.map",
     "runtime-main.js": "/RememberClick/static/js/runtime-main.424929b7.js",
@@ -8,14 +8,14 @@
     "static/js/2.3b96388c.chunk.js": "/RememberClick/static/js/2.3b96388c.chunk.js",
     "static/js/2.3b96388c.chunk.js.map": "/RememberClick/static/js/2.3b96388c.chunk.js.map",
     "index.html": "/RememberClick/index.html",
-    "precache-manifest.087ac7fe707d5ff107978de09d8f42dc.js": "/RememberClick/precache-manifest.087ac7fe707d5ff107978de09d8f42dc.js",
+    "precache-manifest.ad5fef446c4ec17fb4ee5bf8859b1e71.js": "/RememberClick/precache-manifest.ad5fef446c4ec17fb4ee5bf8859b1e71.js",
     "service-worker.js": "/RememberClick/service-worker.js",
-    "static/css/main.53b3bc1e.chunk.css.map": "/RememberClick/static/css/main.53b3bc1e.chunk.css.map"
+    "static/css/main.5d38db8f.chunk.css.map": "/RememberClick/static/css/main.5d38db8f.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.424929b7.js",
     "static/js/2.3b96388c.chunk.js",
-    "static/css/main.53b3bc1e.chunk.css",
+    "static/css/main.5d38db8f.chunk.css",
     "static/js/main.b3bd90ba.chunk.js"
   ]
 }
