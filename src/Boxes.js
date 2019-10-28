@@ -276,12 +276,8 @@ export default class Boxes extends React.Component {
 
 
     changeScore() {
-        if (this.state.score === 14) {
-            alert("You win!")
-            window.location.reload()
-        }
-        else {
-            this.setState({ score: (this.state.score + 1) })
+        if (this.state.score > 14) {
+            setTimeout(function(){ if(!alert('You win!')){window.location.reload();}; }, 50);
         }
     }
 
@@ -295,8 +291,10 @@ export default class Boxes extends React.Component {
                         alert('You lose!')
                         window.location.reload();
                     }
-                    tile.clicked = true
-                    this.changeScore();
+                    else {
+                        tile.clicked = true
+                        this.setState({ score: (this.state.score + 1) }, () => {this.changeScore()})
+                    }
                 }
                 return tile;
             })
@@ -312,32 +310,27 @@ export default class Boxes extends React.Component {
                 <div className="row">
                     <div className="col">
                         <h1>Score: {this.state.score}</h1>
-                        {/* <Score score={this.state.score}></Score> */}
                     </div>
                 </div>
                 <div className="row">
-                    {/* <div className="col"> */}
+                    <ul>
 
-                        <ul>
-
-                            {this.state.tiles.map(aTile => {
-                                return (
-                                    <Tiles
-                                        changeEvent={(event) => this.state}
-                                        shuffleEvent={(event) => {
-                                            this.score2(aTile.name)
-                                            // let temp = (score(this.state, aTile))
-                                            // this.setState({ tiles: temp.arr, score: temp.score, flag: temp.flag })
-                                            this.setState({ tiles: shuffle(this.state.tiles) })
-                                        }}
-                                        image={aTile.img}
-                                        data={aTile.clicked}
-                                    ></Tiles>
-                                )
-                            })}
-                        </ul>
-                    </div>
+                        {this.state.tiles.map(aTile => {
+                            return (
+                                <Tiles
+                                    changeEvent={(event) => this.state}
+                                    shuffleEvent={(event) => {
+                                        this.score2(aTile.name)
+                                        this.setState({ tiles: shuffle(this.state.tiles) })
+                                    }}
+                                    image={aTile.img}
+                                    data={aTile.clicked}
+                                ></Tiles>
+                            )
+                        })}
+                    </ul>
                 </div>
+            </div>
             // </div>
 
         )
