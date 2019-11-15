@@ -4,7 +4,7 @@ RememberClick is a memory game with a simple goal: There are 15 tiles, each one 
 
 There is a hidden twist integrated into the game which I believe increases the difficulty, and fun, you'll have to play to find out! This fun little effect does make the game unplayable on mobile though so beware!
 
-### Technologies implemented
+### Technologies used
 * HTML
 * SASS
 * CSS
