@@ -30,7 +30,7 @@ const original = () => {
             name: "Goku",
         },
         {
-            img: "https://data.whicdn.com/images/110120618/large.png",
+            img: "https://i.skyrock.net/2600/51962600/pics/2097108141_1.jpg",
             clicked: false,
             name: "Bulma"
         },
@@ -169,7 +169,7 @@ export default class Boxes extends React.Component {
                 name: "Goku",
             },
             {
-                img: "https://data.whicdn.com/images/110120618/large.png",
+                img: "https://i.skyrock.net/2600/51962600/pics/2097108141_1.jpg",
                 clicked: false,
                 name: "Bulma"
             },
