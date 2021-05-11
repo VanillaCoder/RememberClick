@@ -25,7 +25,7 @@ const shuffle = (array) => {
 const original = () => {
     let tiles = [
         {
-            img: "https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg",
+            img: "https://i.pinimg.com/originals/31/1c/26/311c26fdcc0c18b6cb0042fd7c229cca.png",
             clicked: false,
             name: "Goku",
         },
@@ -60,7 +60,7 @@ const original = () => {
             name: "Piccolo"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/1095267592623710208/MM1C2fOF.jpg",
+            img: "https://i1.sndcdn.com/avatars-000387329123-ikvouo-t200x200.jpg",
             clicked: false,
             name: "Frieza"
         },
@@ -164,7 +164,7 @@ export default class Boxes extends React.Component {
     state = {
         tiles: [
             {
-                img: "https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg",
+                img: "https://i.pinimg.com/originals/31/1c/26/311c26fdcc0c18b6cb0042fd7c229cca.png",
                 clicked: false,
                 name: "Goku",
             },
@@ -199,7 +199,7 @@ export default class Boxes extends React.Component {
                 name: "Piccolo"
             },
             {
-                img: "https://pbs.twimg.com/profile_images/1095267592623710208/MM1C2fOF.jpg",
+                img: "https://i1.sndcdn.com/avatars-000387329123-ikvouo-t200x200.jpg",
                 clicked: false,
                 name: "Frieza"
             },
