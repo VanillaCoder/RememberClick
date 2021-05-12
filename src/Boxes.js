@@ -1,5 +1,20 @@
 import React from 'react'
 import { Tiles } from "./Tile"
+import andriod18 from './images/andriod18.png'
+import andriod17 from './images/andriod17.jpeg'
+import bulma from './images/bulma.jpg'
+import buu from './images/buu.jpg'
+import cell from './images/cell.jpg'
+import frieza from './images/frieza.jpg'
+import gohan from './images/gohan.jpeg'
+import goku from './images/goku.png'
+import krillin from './images/krillin.jpg'
+import master from './images/master.jpeg'
+import nappa from './images/nappa.jpeg'
+import piccolo from './images/picolo.jpeg'
+import raditz from './images/raditz.png'
+import trunks from './images/trunks.jpg'
+import vegeta from './images/vegeta.jpeg'
 // import Score from "./Score"
 
 // does what it says
@@ -25,77 +40,77 @@ const shuffle = (array) => {
 const original = () => {
     let tiles = [
         {
-            img: "https://i.pinimg.com/originals/31/1c/26/311c26fdcc0c18b6cb0042fd7c229cca.png",
+            img: goku,
             clicked: false,
             name: "Goku",
         },
         {
-            img: "https://i.skyrock.net/2600/51962600/pics/2097108141_1.jpg",
+            img: bulma,
             clicked: false,
             name: "Bulma"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/2880585720/3c8d9c08b5883565ae50767935ce72cb.jpeg",
+            img: vegeta,
             clicked: false,
             name: "Vegeta"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/3727683187/fa41c0c70d778f1f88cab60b0c2b80f5_400x400.jpeg",
+            img: gohan,
             clicked: false,
             name: "Gohan"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/1264145307/cell1_400x400.jpg",
+            img: cell,
             clicked: false,
             name: "Cell"
         },
         {
-            img: "https://static.giantbomb.com/uploads/original/16/160136/2897265-5269474136-qSCdi.jpg",
+            img: krillin,
             clicked: false,
             name: "Krillin"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/2330752766/cwnh2ez5br7lokx45ilu_400x400.jpeg",
+            img: piccolo,
             clicked: false,
             name: "Piccolo"
         },
         {
-            img: "https://i1.sndcdn.com/avatars-000387329123-ikvouo-t200x200.jpg",
+            img: frieza,
             clicked: false,
             name: "Frieza"
         },
         {
-            img: "https://pm1.narvii.com/6686/53a0295bbf28c5df74387e58e64c9a88f14fb211_hq.jpg",
+            img: buu,
             clicked: false,
             name: "Buu"
         },
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWSLRoPcEMSHs5vKV75Caqen74qS-9NmPmJn_UZ2NhaSxFgrpgA",
+            img: trunks,
             clicked: false,
             name: "Trunks"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/429191657729191936/mqK5hvRN.jpeg",
+            img: master,
             clicked: false,
             name: "Master Roshi"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/2863940763/eca91c3d40fb1e488ce3981866a9fb46.jpeg",
+            img: andriod17,
             clicked: false,
             name: "Andriod 17"
         },
         {
-            img: "http://images6.fanpop.com/image/polls/1469000/1469994_1428940880270_full.png?v=1428940921",
+            img: andriod18,
             clicked: false,
             name: "Andriod 18"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/3744522071/01e065ec24704c79c306f2a496312773.png",
+            img: raditz,
             clicked: false,
             name: "Raditz"
         },
         {
-            img: "https://pbs.twimg.com/profile_images/3478307819/4cc86b08ae2170b1da45be2ff40ffefd.jpeg",
+            img: nappa,
             clicked: false,
             name: "Nappa"
         }
@@ -164,80 +179,80 @@ export default class Boxes extends React.Component {
     state = {
         tiles: [
             {
-                img: "https://i.pinimg.com/originals/31/1c/26/311c26fdcc0c18b6cb0042fd7c229cca.png",
-                clicked: false,
-                name: "Goku",
-            },
-            {
-                img: "https://i.skyrock.net/2600/51962600/pics/2097108141_1.jpg",
-                clicked: false,
-                name: "Bulma"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/2880585720/3c8d9c08b5883565ae50767935ce72cb.jpeg",
-                clicked: false,
-                name: "Vegeta"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/3727683187/fa41c0c70d778f1f88cab60b0c2b80f5_400x400.jpeg",
-                clicked: false,
-                name: "Gohan"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/1264145307/cell1_400x400.jpg",
-                clicked: false,
-                name: "Cell"
-            },
-            {
-                img: "https://static.giantbomb.com/uploads/original/16/160136/2897265-5269474136-qSCdi.jpg",
-                clicked: false,
-                name: "Krillin"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/2330752766/cwnh2ez5br7lokx45ilu_400x400.jpeg",
-                clicked: false,
-                name: "Piccolo"
-            },
-            {
-                img: "https://i1.sndcdn.com/avatars-000387329123-ikvouo-t200x200.jpg",
-                clicked: false,
-                name: "Frieza"
-            },
-            {
-                img: "https://pm1.narvii.com/6686/53a0295bbf28c5df74387e58e64c9a88f14fb211_hq.jpg",
-                clicked: false,
-                name: "Buu"
-            },
-            {
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWSLRoPcEMSHs5vKV75Caqen74qS-9NmPmJn_UZ2NhaSxFgrpgA",
-                clicked: false,
-                name: "Trunks"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/429191657729191936/mqK5hvRN.jpeg",
-                clicked: false,
-                name: "Master Roshi"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/2863940763/eca91c3d40fb1e488ce3981866a9fb46.jpeg",
-                clicked: false,
-                name: "Andriod 17"
-            },
-            {
-                img: "http://images6.fanpop.com/image/polls/1469000/1469994_1428940880270_full.png?v=1428940921",
-                clicked: false,
-                name: "Andriod 18"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/3744522071/01e065ec24704c79c306f2a496312773.png",
-                clicked: false,
-                name: "Raditz"
-            },
-            {
-                img: "https://pbs.twimg.com/profile_images/3478307819/4cc86b08ae2170b1da45be2ff40ffefd.jpeg",
-                clicked: false,
-                name: "Nappa"
-            }
+            img: goku,
+            clicked: false,
+            name: "Goku",
+        },
+        {
+            img: bulma,
+            clicked: false,
+            name: "Bulma"
+        },
+        {
+            img: vegeta,
+            clicked: false,
+            name: "Vegeta"
+        },
+        {
+            img: gohan,
+            clicked: false,
+            name: "Gohan"
+        },
+        {
+            img: cell,
+            clicked: false,
+            name: "Cell"
+        },
+        {
+            img: krillin,
+            clicked: false,
+            name: "Krillin"
+        },
+        {
+            img: piccolo,
+            clicked: false,
+            name: "Piccolo"
+        },
+        {
+            img: frieza,
+            clicked: false,
+            name: "Frieza"
+        },
+        {
+            img: buu,
+            clicked: false,
+            name: "Buu"
+        },
+        {
+            img: trunks,
+            clicked: false,
+            name: "Trunks"
+        },
+        {
+            img: master,
+            clicked: false,
+            name: "Master Roshi"
+        },
+        {
+            img: andriod17,
+            clicked: false,
+            name: "Andriod 17"
+        },
+        {
+            img: andriod18,
+            clicked: false,
+            name: "Andriod 18"
+        },
+        {
+            img: raditz,
+            clicked: false,
+            name: "Raditz"
+        },
+        {
+            img: nappa,
+            clicked: false,
+            name: "Nappa"
+        }
 
         ],
         score: 0,
