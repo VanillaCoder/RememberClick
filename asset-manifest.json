@@ -1,21 +1,36 @@
 {
   "files": {
     "main.css": "/RememberClick/static/css/main.5d38db8f.chunk.css",
-    "main.js": "/RememberClick/static/js/main.32ac05e9.chunk.js",
-    "main.js.map": "/RememberClick/static/js/main.32ac05e9.chunk.js.map",
+    "main.js": "/RememberClick/static/js/main.3e2c3955.chunk.js",
+    "main.js.map": "/RememberClick/static/js/main.3e2c3955.chunk.js.map",
     "runtime-main.js": "/RememberClick/static/js/runtime-main.424929b7.js",
     "runtime-main.js.map": "/RememberClick/static/js/runtime-main.424929b7.js.map",
-    "static/js/2.3b96388c.chunk.js": "/RememberClick/static/js/2.3b96388c.chunk.js",
-    "static/js/2.3b96388c.chunk.js.map": "/RememberClick/static/js/2.3b96388c.chunk.js.map",
+    "static/js/2.0b19833f.chunk.js": "/RememberClick/static/js/2.0b19833f.chunk.js",
+    "static/js/2.0b19833f.chunk.js.map": "/RememberClick/static/js/2.0b19833f.chunk.js.map",
     "index.html": "/RememberClick/index.html",
-    "precache-manifest.df10016e6e6f6e020292932901390d7a.js": "/RememberClick/precache-manifest.df10016e6e6f6e020292932901390d7a.js",
+    "precache-manifest.01c1fcc23f909a3705be18fbfbb780c8.js": "/RememberClick/precache-manifest.01c1fcc23f909a3705be18fbfbb780c8.js",
     "service-worker.js": "/RememberClick/service-worker.js",
-    "static/css/main.5d38db8f.chunk.css.map": "/RememberClick/static/css/main.5d38db8f.chunk.css.map"
+    "static/css/main.5d38db8f.chunk.css.map": "/RememberClick/static/css/main.5d38db8f.chunk.css.map",
+    "static/media/andriod17.jpeg": "/RememberClick/static/media/andriod17.3e02ecdd.jpeg",
+    "static/media/andriod18.png": "/RememberClick/static/media/andriod18.313da6ef.png",
+    "static/media/bulma.jpg": "/RememberClick/static/media/bulma.2320bda2.jpg",
+    "static/media/buu.jpg": "/RememberClick/static/media/buu.9f65ed55.jpg",
+    "static/media/cell.jpg": "/RememberClick/static/media/cell.3d00c942.jpg",
+    "static/media/frieza.jpg": "/RememberClick/static/media/frieza.c9ef408a.jpg",
+    "static/media/gohan.jpeg": "/RememberClick/static/media/gohan.b5864f97.jpeg",
+    "static/media/goku.png": "/RememberClick/static/media/goku.188ba28b.png",
+    "static/media/krillin.jpg": "/RememberClick/static/media/krillin.53fc59d4.jpg",
+    "static/media/master.jpeg": "/RememberClick/static/media/master.73628dde.jpeg",
+    "static/media/nappa.jpeg": "/RememberClick/static/media/nappa.078dbbf0.jpeg",
+    "static/media/picolo.jpeg": "/RememberClick/static/media/picolo.004d8a7a.jpeg",
+    "static/media/raditz.png": "/RememberClick/static/media/raditz.864133d2.png",
+    "static/media/trunks.jpg": "/RememberClick/static/media/trunks.7ff77cc6.jpg",
+    "static/media/vegeta.jpeg": "/RememberClick/static/media/vegeta.ef05d367.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.424929b7.js",
-    "static/js/2.3b96388c.chunk.js",
+    "static/js/2.0b19833f.chunk.js",
     "static/css/main.5d38db8f.chunk.css",
-    "static/js/main.32ac05e9.chunk.js"
+    "static/js/main.3e2c3955.chunk.js"
   ]
 }
